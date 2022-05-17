@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE compeny [
+    <!ELEMENT compeny (employee)*>
+    <!ELEMENT employee (name,salary,joiningdate,position)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT salary (#PCDATA)>
+    <!ELEMENT joiningdate (#PCDATA)>
+    <!ELEMENT position (#PCDATA)>
+    <!ATTLIST employee id CDATA #REQUIRED>
+]>
 <compeny>
 <employee id="10234">
 <name>salman</name>
